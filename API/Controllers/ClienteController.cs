@@ -25,6 +25,7 @@ namespace API.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<ClienteViewModel>> Get()
         {
+
             var clientes = _clienteService.GetAll();
 
             if (clientes != null)
